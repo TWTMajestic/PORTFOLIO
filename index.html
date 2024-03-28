@@ -9,71 +9,72 @@
 </head>
 
 <body>
-    <header id="Accueil">
-        <h1>Bienvenue</h1>
-        <p>Je suis Vito Ruggeri, <br> élève en BTS SIO à GAP.</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#Accueil">Accueil</a></li>
-            <li><a href="#Propos">Présentation</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#">Contact</a></li>
-            <li class="dropdown">
-                <a href="#projets">Projets</a>
-                <ul class="dropdown-content">
-                    <li><a href="#projet1">Projet 1</a></li>
-                    <li><a href="#">Projet 2</a></li>
-                </ul>
-            </li>
-            <li><a href="#veille">Veille</a></li>
-        </ul>
-    </nav>
-    <button class="scroll-to-top" id="scroll-to-top-button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 15.41 12 10.83 16.59 15.41 12 19.17 7.41 15.41 10.59 12 7.41 10.59 12 6.83 16.59 10.83 10.59 15.41 12 19.17z"/></svg>
-    </button>
-    <img class="image1" src="mp4.gif" width="500">
-    <div class="texte1" id="qui">
-        <h1><strong>Présentation</strong></h1>
+<header id="Accueil">
+    <h1>Bienvenue</h1>
+    <p>Je suis Vito Ruggeri, <br> élève en BTS SIO à GAP.</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="#Accueil">Accueil</a></li>
+        <li><a href="#Propos">Présentation</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+            <a href="#projets">Projets</a>
+            <ul class="dropdown-content">
+                <li><a href="#projet1">Projet 1</a></li>
+                <li><a href="#">Projet 2</a></li>
+            </ul>
+        </li>
+        <li><a href="#veille">Veille</a></li>
+    </ul>
+</nav>
+<button class="scroll-to-top" id="scroll-to-top-button">
+    <span class="arrow">&#9650;</span>
+</button>
+<img class="image1" src="mp4.gif" width="500">
+<div class="texte1" id="Propos">
+    <h1><strong>Présentation</strong></h1>
+    <br>
+    <p>
+        <strong>Salut !</strong> <br>
         <br>
-        <p id="Propos">
-            <strong>Salut !</strong> <br>
-            <br>
-            <strong>Je suis Vito, passionné d'informatique et étudiant en BTS SIO option SLAM.<br> Je m'immerge dans l'univers numérique avec curiosité et créativité. <br>Explorez mon portfolio pour découvrir mes projets et suivre mon parcours dans le monde captivant de l'informatique.</strong> <br>
-        </p>
+        <strong>Je suis Vito, passionné d'informatique et étudiant en BTS SIO option SLAM.<br> Je m'immerge dans l'univers numérique avec curiosité et créativité. <br>Explorez mon portfolio pour découvrir mes projets et suivre mon parcours dans le monde captivant de l'informatique.</strong> <br>
+    </p>
+    <br>
+</div>
+<br>
+<br>
+<section id="cv">
+    <h2>Mon CV</h2>
+    <br>
+
+    <!-- Informations personnelles -->
+    <div class="info">
+        <h3>Informations personnelles</h3>
         <br>
+        <p><strong>Nom :</strong> Vito Ruggeri</p>
+        <p><strong>Date de naissance :</strong> 18/11/2005</p>
+        <p><strong>Email :</strong> vito.ruggeripro@gmail.com</p>
+        <p><strong>Téléphone :</strong> 06 27 33 66 95</p>
+        <p><strong>Adresse :</strong> 1 rue du Content, GAP 05000</p>
     </div>
     <br>
     <br>
-    <section id="cv">
-        <h2>Mon CV</h2>
+    <br>
+    <!-- Formation -->
+    <div class="education">
+        <h3>Formation</h3>
         <br>
+        <p><strong>° Baccalauréat Général spécialités: NSI, Anglais et option Mathématiques Complémentaires  </strong></p>
+        <p>Lycée Maurice Janetti, 2022-2023</p>
+        <br>
+        <p><strong>° Brevet des collèges</strong></p>
+        <p>Sainte Jeanne D'Arc, 2019-2020</p>
+        <br>
+        <p><strong>° Certification Pix</strong></p>
 
-        <!-- Informations personnelles -->
-        <div class="info">
-            <h3>Informations personnelles</h3>
-            <br>
-            <p><strong>Nom :</strong> Vito Ruggeri</p>
-            <p><strong>Date de naissance :</strong> 18/11/2005</p>
-            <p><strong>Email :</strong> vito.ruggeripro@gmail.com</p>
-            <p><strong>Téléphone :</strong> 06 27 33 66 95</p>
-            <p><strong>Adresse :</strong> 1 rue du Content, GAP 05000</p>
-        </div>
-        <br>
-        <br>
-        <br>
-        <!-- Formation -->
-        <div class="education">
-            <h3>Formation</h3>
-            <br>
-            <p><strong>° Baccalauréat Général spécialités: NSI, Anglais et option Mathématiques Complémentaires  </strong></p>
-            <p>Lycée Maurice Janetti, 2022-2023</p>
-            <br>
-            <p><strong>° Brevet des collèges</strong></p>
-            <p>Sainte Jeanne D'Arc, 2019-2020</p>
-            <br>
-            <p><strong>° Certification Pix</strong></p>
-        </div>
+    </div>
         <br>
         <br>
         <br>
@@ -107,6 +108,29 @@
 
     <section id="veille">
         <h2>Veille</h2>
+        <!-- Ajout du tableau de veille informatique -->
+        <table class="table">
+            <tr>
+                <th>Date</th>
+                <th>Titre</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>01/01/2023</td>
+                <td>Titre 1</td>
+                <td>Description 1</td>
+            </tr>
+            <tr>
+                <td>01/01/2023</td>
+                <td>Titre 2</td>
+                <td>Description 2</td>
+            </tr>
+            <tr>
+                <td>01/01/2023</td>
+                <td>Titre 3</td>
+                <td>Description 3</td>
+            </tr>
+        </table>
     </section>
     <script>
         // Get the button
