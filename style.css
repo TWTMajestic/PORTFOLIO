@@ -1,10 +1,12 @@
-*{
+* {
     margin: 0;
     font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 header {
     background: url(background3.png) fixed 100%;
     height: 900px;
@@ -16,7 +18,8 @@ header {
     color: white;
     padding: 100px 20px;
 }
-header > h1{
+
+header > h1 {
     height: 30%;
     position: relative;
     font-size: 3em;
@@ -24,23 +27,25 @@ header > h1{
     color: white;
     margin-bottom: 20px;
 }
-p{
+
+p {
     font-size: 60px;
     color: white;
 }
+
 .scroll-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: white; /* couleur de fond */
-    color: blueviolet; /* couleur du texte */
-    padding: 15px; /* espace intérieur */
-    border: none; /* pas de bordure */
-    border-radius: 10px; /* bordures arrondies */
+    background-color: white;
+    color: blueviolet;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
     opacity: 0.7;
     transition: opacity 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ombre */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .scroll-to-top:hover {
@@ -51,29 +56,30 @@ p{
 }
 
 .arrow {
-    font-size: 20px; /* taille de la flèche */
-    line-height: 1; /* hauteur de ligne pour centrer la flèche */
+    font-size: 20px;
+    line-height: 1;
 }
 
-
-.image1{
+.image1 {
     padding: 10%;
     margin-left: 24%;
     border-radius: 25vh;
 }
-.texte1 > p{
+
+.texte1 > p {
     color: blueviolet;
     text-align: center;
     font-size: 3vh;
-
 }
-footer > p{
+
+footer > p {
     color: black;
     font-size: smaller;
     text-align: center;
 }
+
 nav {
-    background-color: blueviolet; /* couleur de fond */
+    background-color: blueviolet;
     padding: 20px;
 }
 
@@ -96,13 +102,13 @@ a {
 }
 
 a:hover {
-    color: #ffffff80; /* changement de couleur au survol */
+    color: #ffffff80;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: blueviolet; /* couleur de fond */
+    background-color: blueviolet;
     border-radius: 5px;
     padding: 10px;
 }
@@ -111,80 +117,92 @@ a:hover {
     display: block;
 }
 
-/* Ajout de styles pour les sous-menus */
 .dropdown-content a {
     display: block;
     color: white;
     padding: 5px 0;
-    border-bottom: 1px solid transparent; /* ajout d'une bordure transparente en bas */
-    transition: color 0.3s; /* transition de couleur */
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s;
 }
 
 .dropdown-content a:hover {
-    background-color: transparent; /* pas de couleur de fond au survol */
-    color: #ffffff80; /* changement de couleur au survol */
+    background-color: transparent;
+    color: #ffffff80;
 }
 
-
-#cv>h2{
+#cv > h2 {
     text-align: center;
     font-size: 6vh;
     color: blueviolet;
 }
-.texte1>h1{
+
+.texte1 > h1 {
     text-align: center;
     color: blueviolet;
     font-size: 6vh;
     padding-bottom: 10px;
 }
-.info>p{
+
+.info > p {
     color: blueviolet;
     font-size: 3vh;
 }
-h3{
+
+h3 {
     font-size: 30px;
 }
-.formation>p{
+
+.formation > p {
     color: blueviolet;
     font-size: 3vh;
 }
-.experience>p{
+
+.experience > p {
     color: blueviolet;
     font-size: 3vh;
 }
-.skills>p{
+
+.skills > p {
     color: blueviolet;
     font-size: 3vh;
 }
-div.texte1{
+
+section.texte1 {
     background-color: #f3f3f364;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-#cv{
+
+#cv {
     margin: 10vh;
 }
-#projets>h2{
-    text-align: center;
-    font-size: 6vh;
-    color: blueviolet;
-}
-#projets{
-    margin: 10vh;
-}
-#veille>h2{
-    text-align: center;
-    font-size: 6vh;
-    color: blueviolet;
-}
-#projets{
+
+#projets {
     background-color: #f3f3f3;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+#projets > h2 {
+    text-align: center;
+    font-size: 6vh;
+    color: blueviolet;
+}
+
+#veille > h2 {
+    text-align: center;
+    font-size: 6vh;
+    color: blueviolet;
+}
+
 .table {
     width: 100%;
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
+    margin: 20px;
 }
 
 .table th, .table td {
@@ -217,6 +235,7 @@ div.texte1{
     z-index: 1000;
     background-color: blueviolet;
 }
+
 #contact {
     background-color: #f3f3f3;
     padding: 50px 0;
@@ -241,4 +260,8 @@ div.texte1{
     color: blueviolet;
     font-size: 2.5vh;
     margin-bottom: 10px;
+}
+
+.section-with-nav-offset {
+    padding-top: 80px;
 }
