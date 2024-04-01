@@ -215,6 +215,30 @@ div.texte1{
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: blueviolet; 
-    opacity: 1;
+    background-color: blueviolet;
+}
+#contact {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: blueviolet;
+    font-size: 6vh;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    color: blueviolet;
+    font-size: 4vh;
+}
+
+.contact-info p {
+    color: blueviolet;
+    font-size: 2.5vh;
+    margin-bottom: 10px;
 }
