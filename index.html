@@ -13,7 +13,7 @@
     <h1>Bienvenue</h1>
     <p>Je suis Vito Ruggeri, <br> élève en BTS SIO à GAP.</p>
 </header>
-<nav>
+<nav id="mainNav">
     <ul>
         <li><a href="#Accueil">Accueil</a></li>
         <li><a href="#Propos">Présentation</a></li>
@@ -63,7 +63,7 @@
     <br>
     <br>
     <!-- Formation -->
-    <div class="education">
+    <div class="formation">
         <h3>Formation</h3>
         <br>
         <p><strong>° Baccalauréat Général spécialités: NSI, Anglais et option Mathématiques Complémentaires  </strong></p>
@@ -152,6 +152,18 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
+
+        window.addEventListener('scroll', function() {
+            var nav = document.getElementById('mainNav');
+            var header = document.querySelector('header');
+            var headerHeight = header.offsetHeight;
+
+            if (window.scrollY > headerHeight) {
+                nav.classList.add('fixed-nav');
+            } else {
+                nav.classList.remove('fixed-nav');
+            }
+        });
     </script>
     <footer>
         <hr>
