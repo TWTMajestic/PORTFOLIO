@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url(background3.png) fixed 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+header > h1 {
+    height: 30%;
+    position: relative;
+    font-size: 3em;
+    top: 150px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 60px;
+    color: white;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    color: blueviolet;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top:hover {
+    background-color: blueviolet;
+    color: white;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.arrow {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.image1 {
+    padding: 10%;
+    margin-left: 24%;
+    border-radius: 25vh;
+}
+
+.texte1 > p {
+    color: blueviolet;
+    text-align: center;
+    font-size: 3vh;
+}
+
+footer > p {
+    color: black;
+    font-size: smaller;
+    text-align: center;
+}
+
+nav {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffffff80;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
+    color: #ffffff80;
+}
+
+#cv > h2 {
+    text-align: center;
+    font-size: 6vh;
+    color: blueviolet;
+}
+
+.texte1 > h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 6vh;
+    padding-bottom: 10px;
+}
+
+.info > p {
+    color: blueviolet;
+    font-size: 3vh;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.formation > p {
+    color: blueviolet;
+    font-size: 3vh;
+}
+
+.experience > p {
+    color: blueviolet;
+    font-size: 3vh;
+}
+
+.skills > p {
+    color: blueviolet;
+    font-size: 3vh;
+}
+
+section.texte1 {
+    background-color: #f3f3f364;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#cv {
+    margin: 10vh;
+}
+
+#projets {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#projets > h2 {
+    text-align: center;
+    font-size: 6vh;
+    color: blueviolet;
+}
+
+#veille > h2 {
+    text-align: center;
+    font-size: 6vh;
+    color: blueviolet;
+}
+
+.table {
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table th {
+    background-color: blueviolet;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: blueviolet;
+}
+
+#contact {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: blueviolet;
+    font-size: 6vh;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    color: blueviolet;
+    font-size: 4vh;
+}
+
+.contact-info p {
+    color: blueviolet;
+    font-size: 2.5vh;
+    margin-bottom: 10px;
+}
+
+.section-with-nav-offset {
+    padding-top: 80px;
+}
