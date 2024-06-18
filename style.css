@@ -171,6 +171,16 @@ button.scroll-to-top:hover {
     white-space: nowrap;
 }
 
+/* Description links */
+.description a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background-color: #1B263B;
