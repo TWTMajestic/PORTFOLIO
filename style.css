@@ -16,7 +16,6 @@ button {
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,6 +25,7 @@ body {
     color: #333;
 }
 
+/* --------------------Accueil--------------------*/
 #Accueil {
     display: flex;
     height: 85vh;
@@ -68,54 +68,58 @@ body {
 /* Style CSS pour la flèche animée */
 
 .arrow-container {
-    text-align: center; /* Centrer le contenu horizontalement */
-    position: relative; /* Position relative pour permettre le positionnement absolu de la flèche */
-  }
-  
-  .arrow-down {
+    text-align: center;
+    /* Centrer le contenu horizontalement */
+    position: relative;
+    /* Position relative pour permettre le positionnement absolu de la flèche */
+}
+
+.arrow-down {
     width: 0;
     height: 0;
-    border-left: 10px solid transparent; /* Taille et forme de la flèche */
+    border-left: 10px solid transparent;
+    /* Taille et forme de la flèche */
     border-right: 10px solid transparent;
-    border-top: 15px solid #0a4c92; /* Couleur de fond de la flèche */
-    position: absolute; /* Position absolue par rapport à son conteneur */
-    bottom: -20px; /* Distance depuis le bas de l'image */
-    left: 50%; /* Position au centre horizontalement */
-    transform: translateX(-50%); /* Centrer la flèche horizontalement */
-    animation: bounce 2s infinite; /* Animation de rebond */
-  }
-  
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0); /* Position de départ et d'arrivée */
+    border-top: 15px solid #0a4c92;
+    /* Couleur de fond de la flèche */
+    position: absolute;
+    /* Position absolue par rapport à son conteneur */
+    bottom: -20px;
+    /* Distance depuis le bas de l'image */
+    left: 50%;
+    /* Position au centre horizontalement */
+    transform: translateX(-50%);
+    /* Centrer la flèche horizontalement */
+    animation: bounce 2s infinite;
+    /* Animation de rebond */
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        /* Position de départ et d'arrivée */
     }
+
     40% {
-      transform: translateY(10px); /* Hauteur maximale du rebond */
+        transform: translateY(10px);
+        /* Hauteur maximale du rebond */
     }
-  }
-  
+}
+
+/* --------------------Accueil--------------------*/
+
+/* --------------------Global--------------------*/
 
 /* Container */
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-}
-
-.container1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    font-size: larger;
-}
-
-.container1 img {
-    width: 50%;
-    height: auto;
-    border-radius: 15px;
 }
 
 /* Header */
@@ -130,7 +134,9 @@ header {
     margin-bottom: 20px;
 }
 
-/* Barre de navigation */
+/* --------------------Global--------------------*/
+
+/* --------------------Barre de navigation --------------------*/
 #mainNav {
     background-color: #0a4c92;
     /* Couleur de fond de la barre de navigation */
@@ -146,6 +152,8 @@ header {
     /* Centrage horizontal avec espace entre les éléments */
     align-items: center;
     /* Centrage vertical des éléments */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #bonne-mere-logo {
@@ -189,7 +197,103 @@ header {
     transition: 0.3s;
 }
 
-/* Sections */
+/* --------------------Barre de navigation --------------------*/
+
+/* --------------------Présentation --------------------*/
+
+.container-presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: larger;
+}
+
+.container-presentation img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.presentation-text {
+    position: relative;
+    left: -100%;
+    opacity: 0;
+}
+
+.presentation-image {
+    position: relative;
+    right: -100%;
+    opacity: 0;
+}
+
+/* --------------------Présentation --------------------*/
+
+/* --------------------Projet1 --------------------*/
+
+/* Section et conteneur */
+#projets {
+    padding: 50px 0;
+    background-color: #0a4c92;
+    color: #fff;
+}
+
+#projets .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Style des cartes de projet */
+.projet {
+    margin: 20px 0;
+}
+
+.projet-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Style du contenu des projets */
+.projet-content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.projet-content h3 {
+    margin: 0 0 10px;
+}
+
+.projet-content p {
+    margin: 0;
+}
+
+
+/* --------------------Projet1 --------------------*/
+
+
+
+/* --------------------Sections--------------------*/
+
 .section {
     padding: 60px 20px;
     border: 2px solid #000000;
@@ -224,7 +328,10 @@ header {
     border-radius: 15px;
 }
 
-/* Table */
+/* --------------------Sections--------------------*/
+
+/* --------------------Tableau Veille--------------------*/
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -235,7 +342,7 @@ header {
 
 .table th,
 .table td {
-    border: 1px solid #0a4c92;
+    border: 1px solid black;
     /* Bleu OM */
     padding: 10px;
     text-align: left;
@@ -275,7 +382,10 @@ header {
     text-decoration: underline;
 }
 
-/* Footer */
+/* --------------------Tableau Veille--------------------*/
+
+/* --------------------Footer--------------------*/
+
 footer {
     background-color: #0a4c92;
     /* Bleu OM */
@@ -285,3 +395,5 @@ footer {
     border-radius: 15px;
     margin: 20px 10%;
 }
+
+/* --------------------Footer--------------------*/

@@ -1,230 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio VITO RUGGERI</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="scripts.js"></script>
-  </head>
-  <body>
-    <header id="Accueil">
-      <div class="container" id="Welcome">
-        <br>
-        <h1>Bienvenue sur mon portfolio !</h1>
-        <br>
-        <div class="animated-text-container">
-          <p id="animated-text"></p>
-        </div>
-        <div class="arrow-container">
-          <img src="LOGO.png" alt="LOGO" id="logo">
-          <i class="fas fa-chevron-down arrow-down"></i>
-        </div>
-    </header>
-    <nav id="mainNav">
-      <img src="marseille.png" alt="Bonne Mère de Marseille" id="bonne-mere-logo">
-      <ul>
-        <li><a href="#Accueil">Accueil</a></li>
-        <li><a href="#Propos">Présentation</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#veille">Veille</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#calendar">Stage</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>    
-    <section id="Propos" class="section section-dark">
-      <div class="container1">
-        <div>
-          <h1><strong>Présentation</strong></h1>
-          <br />
-          <p>
-            <strong>Salut !</strong> <br /><br />
-            <strong>
-              Je suis Vito, passionné d'informatique et étudiant en BTS SIO
-              option SLAM. <br />
-              Je m'immerge dans l'univers numérique avec curiosité et créativité.
-              <br />
-              Explorez mon portfolio pour découvrir mes projets et suivre mon
-              parcours dans le monde captivant de l'informatique.
-            </strong>
-          </p>
-        </div>
-        <img src="./mp4.gif">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio VITO RUGGERI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <header id="Accueil">
+    <div class="container" id="Welcome">
+      <br>
+      <h1>Bienvenue sur mon portfolio !</h1>
+      <br>
+      <div class="animated-text-container">
+        <p id="animated-text"></p>
       </div>
-    </section>
-    <section id="cv" class="section section-light">
-      <div class="container">
-        <h2>Mon CV</h2>
-        <div class="cv-section">
-          <h3>Informations personnelles</h3>
-          <p><strong>Nom :</strong> Vito Ruggeri</p>
-          <p><strong>Date de naissance :</strong> 18/11/2005</p>
-          <p><strong>Email :</strong> vito.ruggeripro@gmail.com</p>
-        </div>
-        <div class="cv-section">
-          <h3>Formation</h3>
-          <p>
-            <strong
-              >° Baccalauréat Général spécialités: NSI, Anglais et option
-              Mathématiques Complémentaires</strong
-            >
-          </p>
-          <p>Lycée Maurice Janetti, 2022-2023</p>
-          <p><strong>° Brevet des collèges</strong></p>
-          <p>Sainte Jeanne D'Arc, 2019-2020</p>
-          <p><strong>° Certification Pix</strong></p>
-        </div>
-        <div class="cv-section">
-          <h3>Expérience professionnelle</h3>
-          <p><strong>Stage Milee, février 2023</strong></p>
-          <p>
-            Stage effectué au sein de la direction des Data pour une entreprise
-            d'imprimés publicitaires.
-          </p>
-        </div>
-        <div class="cv-section">
-          <h3>Compétences</h3>
-          <p>Langages de programmation : Python, Java, HTML, CSS, SQL, C#</p>
-          <p>Bases de données : MySQL</p>
-          <!-- Autres compétences au besoin -->
-        </div>
+      <div class="arrow-container">
+        <img src="LOGO.png" alt="LOGO" id="logo">
+        <i class="fas fa-chevron-down arrow-down"></i>
       </div>
-    </section>
-    <section id="projets" class="section section-dark">
-      <div class="container">
-        <h2>Projets</h2>
+  </header>
+  <nav id="mainNav">
+    <img src="marseille.png" alt="Bonne Mère de Marseille" id="bonne-mere-logo">
+    <ul>
+      <li><a href="#Accueil">Accueil</a></li>
+      <li><a href="#Propos">Présentation</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#veille">Veille</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#calendar">Stage</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="Propos" class="section section-dark">
+    <div class="container-presentation">
+      <div class="presentation-text">
+        <h1><strong>Présentation</strong></h1>
         <br />
-        <div id="projet1" class="project">
-          <h3>Projet 1 : M2L: JavaFX</h3>
-          <!-- Détails sur le projet ici -->
+        <p>
+          <strong>Salut !</strong> <br /><br />
+          <strong>
+            Je suis Vito, passionné d'informatique et étudiant en BTS SIO
+            option SLAM. <br />
+            Je m'immerge dans l'univers numérique avec curiosité et créativité.
+            <br />
+            Explorez mon portfolio pour découvrir mes projets et suivre mon
+            parcours dans le monde captivant de l'informatique.
+          </strong>
+        </p>
+      </div>
+      <img src="./mp4.gif" class="presentation-image">
+    </div>
+  </section>
+
+  <section id="cv" class="section section-light">
+    <div class="container">
+      <h2>Mon CV</h2>
+      <div class="cv-section">
+        <h3>Informations personnelles</h3>
+        <p><strong>Nom :</strong> Vito Ruggeri</p>
+        <p><strong>Date de naissance :</strong> 18/11/2005</p>
+        <p><strong>Email :</strong> vito.ruggeripro@gmail.com</p>
+      </div>
+      <div class="cv-section">
+        <h3>Formation</h3>
+        <p>
+          <strong>° Baccalauréat Général spécialités: NSI, Anglais et option
+            Mathématiques Complémentaires</strong>
+        </p>
+        <p>Lycée Maurice Janetti, 2022-2023</p>
+        <p><strong>° Brevet des collèges</strong></p>
+        <p>Sainte Jeanne D'Arc, 2019-2020</p>
+        <p><strong>° Certification Pix</strong></p>
+      </div>
+      <div class="cv-section">
+        <h3>Expérience professionnelle</h3>
+        <p><strong>Stage Milee, février 2023</strong></p>
+        <p>
+          Stage effectué au sein de la direction des Data pour une entreprise
+          d'imprimés publicitaires.
+        </p>
+      </div>
+      <div class="cv-section">
+        <h3>Compétences</h3>
+        <p>Langages de programmation : Python, Java, HTML, CSS, SQL, C#</p>
+        <p>Bases de données : MySQL, SQLServer</p>
+        <!-- Autres compétences au besoin -->
+      </div>
+    </div>
+  </section>
+  <section id="projets" class="section section-dark">
+    <div class="container">
+      <h2>Projets</h2>
+      <br />
+      <div class="projet">
+        <div class="projet-card" style="background-image: url('JAVA_FX_LOGO.png');">
+          <div class="projet-content">
+            <h3>Projet 1 : M2L</h3>
+            <p>
+              <strong>Langages :</strong> Java, JavaFX
+              <br>
+              <strong>Base de données :</strong> XAMPP
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-    <section id="veille" class="section section-light">
-      <div class="container">
-        <h2>Veille</h2>
-        <table class="table">
-          <tr>
-            <th>Date</th>
-            <th>Titre</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td>09/2023</td>
-            <td>DALL-E 3</td>
-            <td class="description">
-              <a href="https://www.blogdumoderateur.com/dall-e-3-disponible-chatgpt-comment-generer-images/" target="_blank">
-                Découvrir DALL-E 3 le nouveau générateur d'images d'OpenAI !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>12/01/2024</td>
-            <td>Rabbit R1 CES</td>
-            <td class="description">
-              <a href="https://www.usine-digitale.fr/article/ces-2024-le-rabbit-r1-troque-l-ecran-tactile-des-smartphones-contre-une-interface-conversationnelle.N2206390" target="_blank">
-                Découvrir le "futur" du smartphone !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>01/2024</td>
-            <td>Samsung IA</td>
-            <td class="description">
-              <a href="https://leclaireur.fnac.com/article/cp62953-tout-savoir-sur-galaxy-ai-lintelligence-artificielle-de-samsung/" target="_blank">
-                Découvrir les nouveautés de l'IA de Samsung !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>02/2024</td>
-            <td>Sora IA</td>
-            <td class="description">
-              <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.blogdumoderateur.com/tools/sora/&ved=2ahUKEwiPzfvR6OSGAxVpQfEDHWZ3CFYQFnoECDQQAQ&usg=AOvVaw2YCM83KncP_b4JC72t1bHP" target="_blank">
-                Découvrir les générateur vidéo d'OpenAI !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>03/2024</td>
-            <td>Claude</td>
-            <td class="description">
-              <a href="https://www.lemonde.fr/pixels/article/2024/05/14/intelligence-artificielle-anthropic-lance-en-europe-claude-son-concurrent-a-chatgpt_6233030_4408996.html" target="_blank">
-                Découvrir le concurrent de Chat-GPT
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>04/2024</td>
-            <td>Llama 3</td>
-            <td class="description">
-              <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lesnumeriques.com/societe-numerique/intelligence-artificielle-tout-savoir-sur-meta-llama-3-a221703.html&ved=2ahUKEwjX0MHY6eSGAxXbVfEDHfbvAj8QFnoECBkQAQ&usg=AOvVaw0IKmqLNHBPf0HqcYePiqQQ" target="_blank">
-                Découvrir l'alternantive gratuite et opensource à Chat-GPT de Meta !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>05/2024</td>
-            <td>Chat-GPT 4o</td>
-            <td class="description">
-              <a href="https://www.journaldugeek.com/2024/05/14/chatgpt-4o-est-encore-plus-intelligent-et-surtout-il-est-gratuit/" target="_blank">
-                Découvrir le nouveau modèle de langage d'OpenAI plus puissant et gratuit !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>05/2024</td>
-            <td>Copilot +</td>
-            <td class="description">
-              <a href="https://www.lemonde.fr/pixels/article/2024/05/20/microsoft-annonce-copilot-une-gamme-de-pc-portables-optimises-pour-l-ia_6234470_4408996.html" target="_blank">
-                Découvrir la nouvelle gamme d'ordinateur boostée à l'IA !
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <td>06/2024</td>
-            <td>Apple Intelligence</td>
-            <td class="description">
-              <a href="https://www.lemonde.fr/pixels/article/2024/06/11/intelligence-artificielle-apple-presente-les-prochaines-fonctionnalites-de-ses-iphone-mac-et-ipad_6238554_4408996.html" target="_blank">
-                Découvrir modèle de langage made in Apple !
-              </a>
-            </td>
-          </tr>
-          <!-- Autres lignes au besoin -->
-        </table>        
-      </div>
-    </section>
-    <section id="calendar" class="section section-dark">
-      <div class="container">
-        <h2>Rapport de Stage</h2>
-        <h2>                         </h2>
+      <!-- Ajoutez d'autres projets ici en dupliquant le div .projet -->
+    </div>
+  </section>
+  <section id="veille" class="section section-light">
+    <div class="container">
+      <h2>Veille</h2>
+      <table class="table">
+        <tr>
+          <th>Date</th>
+          <th>Titre</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>09/2023</td>
+          <td>DALL-E 3</td>
+          <td class="description">
+            <a href="https://www.blogdumoderateur.com/dall-e-3-disponible-chatgpt-comment-generer-images/"
+              target="_blank">
+              Découvrir DALL-E 3 le nouveau générateur d'images d'OpenAI !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>12/01/2024</td>
+          <td>Rabbit R1 CES</td>
+          <td class="description">
+            <a href="https://www.usine-digitale.fr/article/ces-2024-le-rabbit-r1-troque-l-ecran-tactile-des-smartphones-contre-une-interface-conversationnelle.N2206390"
+              target="_blank">
+              Découvrir le "futur" du smartphone !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>01/2024</td>
+          <td>Samsung IA</td>
+          <td class="description">
+            <a href="https://leclaireur.fnac.com/article/cp62953-tout-savoir-sur-galaxy-ai-lintelligence-artificielle-de-samsung/"
+              target="_blank">
+              Découvrir les nouveautés de l'IA de Samsung !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>02/2024</td>
+          <td>Sora IA</td>
+          <td class="description">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.blogdumoderateur.com/tools/sora/&ved=2ahUKEwiPzfvR6OSGAxVpQfEDHWZ3CFYQFnoECDQQAQ&usg=AOvVaw2YCM83KncP_b4JC72t1bHP"
+              target="_blank">
+              Découvrir les générateur vidéo d'OpenAI !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>03/2024</td>
+          <td>Claude</td>
+          <td class="description">
+            <a href="https://www.lemonde.fr/pixels/article/2024/05/14/intelligence-artificielle-anthropic-lance-en-europe-claude-son-concurrent-a-chatgpt_6233030_4408996.html"
+              target="_blank">
+              Découvrir le concurrent de Chat-GPT
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>04/2024</td>
+          <td>Llama 3</td>
+          <td class="description">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lesnumeriques.com/societe-numerique/intelligence-artificielle-tout-savoir-sur-meta-llama-3-a221703.html&ved=2ahUKEwjX0MHY6eSGAxXbVfEDHfbvAj8QFnoECBkQAQ&usg=AOvVaw0IKmqLNHBPf0HqcYePiqQQ"
+              target="_blank">
+              Découvrir l'alternantive gratuite et opensource à Chat-GPT de Meta !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>05/2024</td>
+          <td>Chat-GPT 4o</td>
+          <td class="description">
+            <a href="https://www.journaldugeek.com/2024/05/14/chatgpt-4o-est-encore-plus-intelligent-et-surtout-il-est-gratuit/"
+              target="_blank">
+              Découvrir le nouveau modèle de langage d'OpenAI plus puissant et gratuit !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>05/2024</td>
+          <td>Copilot +</td>
+          <td class="description">
+            <a href="https://www.lemonde.fr/pixels/article/2024/05/20/microsoft-annonce-copilot-une-gamme-de-pc-portables-optimises-pour-l-ia_6234470_4408996.html"
+              target="_blank">
+              Découvrir la nouvelle gamme d'ordinateur boostée à l'IA !
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>06/2024</td>
+          <td>Apple Intelligence</td>
+          <td class="description">
+            <a href="https://www.lemonde.fr/pixels/article/2024/06/11/intelligence-artificielle-apple-presente-les-prochaines-fonctionnalites-de-ses-iphone-mac-et-ipad_6238554_4408996.html"
+              target="_blank">
+              Découvrir modèle de langage made in Apple !
+            </a>
+          </td>
+        </tr>
+        <!-- Autres lignes au besoin -->
+      </table>
+    </div>
+  </section>
+  <section id="calendar" class="section section-dark">
+    <div class="container">
+      <h2>Rapport de Stage</h2>
+      <h2> </h2>
+      <br>
+      <div id="datepicker"></div>
+      <br />
+      <img id="screenshot" src="" alt="Capture d'écran de la journée"
+        style="display: none; max-width: 100%; border-radius: 15px;" />
+    </div>
+  </section>
+  <section id="contact" class="section section-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <br />
+      <div class="contact-info">
+        <h3>Coordonnées</h3>
         <br>
-        <div id="datepicker"></div>
-        <br/>
-        <img id="screenshot" src="" alt="Capture d'écran de la journée" style="display: none; max-width: 100%; border-radius: 15px;" />
+        <p>Email : vito.ruggeripro@gmail.com</p>
+        <!-- Autres informations de contact au besoin -->
       </div>
-    </section>    
-    <section id="contact" class="section section-dark">
-      <div class="container">
-        <h2>Contact</h2>
-        <br />
-        <div class="contact-info">
-          <h3>Coordonnées</h3>
-          <br>
-          <p>Email : vito.ruggeripro@gmail.com</p>
-          <!-- Autres informations de contact au besoin -->
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <p><strong>Vito RUGGERI ©</strong></p>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p><strong>Vito RUGGERI ©</strong></p>
+    </div>
+  </footer>
+</body>
+
 </html>
