@@ -25,6 +25,56 @@ body {
     color: #333;
 }
 
+/* --------------------Global--------------------*/
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #0a4c92;
+    /* Bleu OM */
+    color: #ffffff;
+    /* Blanc */
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* --------------------Global--------------------*/
+
+/* --------------------Sections--------------------*/
+
+.section {
+    padding: 60px 20px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    margin: 20px 10%;
+    position: relative;
+    /* Ajout de position relative pour le contenu */
+}
+
+.section-light {
+    background-color: #ffffff;
+    /* Fond blanc */
+    color: #333;
+}
+
+.section-dark {
+    background-color: #0a4c92;
+    /* Bleu OM */
+    color: #ffffff;
+    /* Blanc */
+}
+
+
+
+/* --------------------Sections--------------------*/
+
 /* --------------------Accueil--------------------*/
 #Accueil {
     display: flex;
@@ -113,29 +163,6 @@ body {
 
 /* --------------------Accueil--------------------*/
 
-/* --------------------Global--------------------*/
-
-/* Container */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header */
-header {
-    background-color: #0a4c92;
-    /* Bleu OM */
-    color: #ffffff;
-    /* Blanc */
-    padding: 60px 0;
-    text-align: center;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-/* --------------------Global--------------------*/
-
 /* --------------------Barre de navigation --------------------*/
 #mainNav {
     background-color: #0a4c92;
@@ -152,8 +179,6 @@ header {
     /* Centrage horizontal avec espace entre les éléments */
     align-items: center;
     /* Centrage vertical des éléments */
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 #bonne-mere-logo {
@@ -161,6 +186,11 @@ header {
     /* Ajustez la taille de l'image selon vos besoins */
     margin-left: 20px;
     /* Marge à gauche pour séparer l'image du bord de la page */
+}
+
+#bonne-mere-logo:hover {
+    transform:scale(1.1)
+    /* Agrandir l'image au survol */
 }
 
 #mainNav ul {
@@ -194,7 +224,7 @@ header {
     /* Bleu OM plus foncé au survol */
     border-radius: 10px;
     /* Plus de bordure arrondie au survol */
-    transition: 0.3s;
+    transform: scale(1.07);
 }
 
 /* --------------------Barre de navigation --------------------*/
@@ -212,28 +242,40 @@ header {
 }
 
 .container-presentation img {
+    position: relative;
+    right: -100%;
+    opacity: 0;
     width: 50%;
     height: auto;
     border-radius: 15px;
+    margin-left: 100px;
 }
 
 .presentation-text {
     position: relative;
     left: -100%;
     opacity: 0;
+    text-align: justify;
 }
-
-.presentation-image {
-    position: relative;
-    right: -100%;
-    opacity: 0;
-}
-
 /* --------------------Présentation --------------------*/
+
+/* --------------------CV--------------------*/
+
+.cv-section {
+    border: 1px solid #0a4c92;
+    /* Bleu OM */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    /* Fond blanc */
+    border-radius: 15px;
+}
+
+/*--------------------CV--------------------*/
+
 
 /* --------------------Projet1 --------------------*/
 
-/* Section et conteneur */
 #projets {
     padding: 50px 0;
     background-color: #0a4c92;
@@ -241,7 +283,6 @@ header {
 }
 
 #projets .container {
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -251,6 +292,7 @@ header {
 }
 
 .projet-card {
+    display: flex;
     position: relative;
     border-radius: 15px;
     overflow: hidden;
@@ -265,7 +307,10 @@ header {
 }
 
 .projet-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    transition: 0.2s ease-in;
+    margin-top: 50px;
+    transition: 0.2s ease-out;
     cursor: pointer;
 }
 
@@ -290,45 +335,6 @@ header {
 
 /* --------------------Projet1 --------------------*/
 
-
-
-/* --------------------Sections--------------------*/
-
-.section {
-    padding: 60px 20px;
-    border: 2px solid #000000;
-    /* Bordure noire */
-    border-radius: 15px;
-    margin: 20px 10%;
-    position: relative;
-    /* Ajout de position relative pour le contenu */
-}
-
-.section-light {
-    background-color: #ffffff;
-    /* Fond blanc */
-    color: #333;
-}
-
-.section-dark {
-    background-color: #0a4c92;
-    /* Bleu OM */
-    color: #ffffff;
-    /* Blanc */
-}
-
-/* CV Section */
-.cv-section {
-    border: 1px solid #0a4c92;
-    /* Bleu OM */
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #ffffff;
-    /* Fond blanc */
-    border-radius: 15px;
-}
-
-/* --------------------Sections--------------------*/
 
 /* --------------------Tableau Veille--------------------*/
 
@@ -392,8 +398,8 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    border-radius: 15px;
-    margin: 20px 10%;
+    /* border-radius: 15px; */
+    /* margin: 20px 10%; */
 }
 
 /* --------------------Footer--------------------*/
